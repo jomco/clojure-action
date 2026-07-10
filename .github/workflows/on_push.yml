@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: 2026 Jomco B.V.
+# SPDX-License-Identifier: MIT
+
+on:
+  push:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v7
+    - uses: ./
+
+    - name: Java installed
+      run: |
+        java --version
+
+    - name: Clojure installed
+      run: |
+        clojure --version
+
+    - name: Babashka installed
+      run: |
+        bb --version
