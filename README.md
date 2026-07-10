@@ -35,6 +35,7 @@ This action is configurable with the following inputs:
   `linux-amd64`).
 
 - `m2-cache-key`
+
   Partial key to use for caching the `~/.m2` directory.  This value
   defaults to `m2` and is combined with `${{runner.os}}`, the versions
   above, and suffixed with the current date.  A fallback restore key is
