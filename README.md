@@ -11,7 +11,7 @@ be available for your workflow steps.
 ```yaml
   - uses: jomco/clojure-action
     with:
-      java.version: 25
+      java-version: 25
 ```
 
 ## Inputs
